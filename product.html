@@ -38,7 +38,7 @@
 
     <div class="mobile-overlay" id="mobileOverlay"></div>
     <nav class="mobile-nav" id="mobileNav">
-        <button class="mobile-nav-close" id="mobileNavClose">Ã—</button>
+        <button class="mobile-nav-close" id="mobileNavClose">Ã</button>
         <ul class="mobile-nav-links">
             <li><a href="all-collections.html">Collections</a></li>
             <li><a href="index.html#story">Our Story</a></li>
@@ -503,7 +503,7 @@
             const keywordString = `${product.name}, ${product.collection}, ${product.tag}, fine gold jewelry, luxury jewelry, handcrafted ${product.tag.toLowerCase()}, ${product.collection.toLowerCase()} jewelry, Aurelia Atelier`;
 
             document.title = `${product.name} | Aurelia Atelier`;
-            document.querySelector('meta[name="description"]').setAttribute('content', `${product.name} by Aurelia Atelier — ${product.description}`);
+            document.querySelector('meta[name="description"]').setAttribute('content', `${product.name} by Aurelia Atelier  ${product.description}`);
             document.querySelector('meta[name="keywords"]').setAttribute('content', keywordString);
             document.querySelector('meta[property="og:title"]').setAttribute('content', `${product.name} | Aurelia Atelier`);
             document.querySelector('meta[property="og:description"]').setAttribute('content', product.description);
