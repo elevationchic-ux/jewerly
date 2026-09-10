@@ -1,0 +1,630 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurelia Atelier Jewelry | Fine Gold Product Detail</title>
+    <meta name="description" content="Explore Aurelia Atelier fine jewelry with handcrafted details, premium metal finishes, gemstone options, and private customization for heirloom-quality pieces.">
+    <meta name="keywords" content="luxury jewelry product, fine gold jewelry, handcrafted ring, gold pendant, personalized jewelry, gemstone jewelry, fine gold necklace, artisan gold bracelet, luxury gold ring, bespoke jewelry">
+    <meta name="robots" content="index,follow">
+    <meta property="og:type" content="product">
+    <meta property="og:title" content="Aurelia Atelier Jewelry">
+    <meta property="og:description" content="Explore Aurelia handcrafted gold jewelry with premium stone and metal options.">
+    <meta property="og:image" content="images/maison-hero-02.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="shortcut icon" href="favicon.svg" type="image/svg+xml"><link rel="canonical" href="https://aureliaatelier.com/product.html">
+    <script type="application/ld+json" id="productSchema"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="templatemo-maison-style.css">
+</head>
+<body class="catalog-page">
+    <header class="site-header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">Aurelia <span>Atelier</span></a>
+                <nav class="nav-main">
+                    <a href="all-collections.html">Collections</a>
+                    <a href="index.html#story">Our Story</a>
+                    <a href="index.html#craftsmanship">Craftsmanship</a>
+                    <a href="index.html#contact">Visit Us</a>
+                    <a href="index.html#contact" class="nav-cta">Book Appointment</a>
+                </nav>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <nav class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" id="mobileNavClose">Ã—</button>
+        <ul class="mobile-nav-links">
+            <li><a href="all-collections.html">Collections</a></li>
+            <li><a href="index.html#story">Our Story</a></li>
+            <li><a href="index.html#craftsmanship">Craftsmanship</a></li>
+            <li><a href="index.html#contact">Visit Us</a></li>
+        </ul>
+        <div class="mobile-nav-cta"><a href="index.html#contact" class="btn-primary">Book Appointment</a></div>
+    </nav>
+
+    <main>
+        <section class="product-detail-section">
+            <div class="container">
+                <div class="product-detail-layout">
+                    <div class="product-gallery">
+                        <div class="product-gallery-main">
+                            <img id="productMainImage" src="images/maison-hero-02.jpg" alt="Aurelia product">
+                        </div>
+                        <div class="product-gallery-thumbs" id="productThumbs"></div>
+                    </div>
+
+                    <div class="product-info">
+                        <p class="text-label" id="productCollection">Signature Collection</p>
+                        <h1 class="heading-display product-detail-name" id="productName">Aurora</h1>
+                        <div class="product-detail-price-row">
+                            <span class="product-detail-price" id="productPrice">$4,850</span>
+                            <span class="product-detail-tag" id="productTag">Pendant</span>
+                        </div>
+                        <p class="product-detail-description" id="productDescription">
+                            A handcrafted statement of luminous gold and refined artistry.
+                        </p>
+
+                        <ul class="product-detail-list" id="productSpecs"></ul>
+
+                        <div class="stone-selector" aria-label="Stone selection">
+                            <p class="text-label">Stone or finish</p>
+                            <div class="stone-options" id="stoneOptions"></div>
+                        </div>
+
+                        <div class="product-detail-actions">
+                            <button type="button" class="btn-primary" data-add-to-cart-primary data-product-id="aurora">Add to bag</button>
+                            <button type="button" class="btn-secondary" data-toggle-wishlist data-product-id="aurora">Save to wishlist</button>
+                            <a href="all-collections.html" class="btn-secondary btn-secondary-ghost">Back to Collections</a>
+                        </div>
+
+                        <div class="detail-card">
+                            <h3>Why clients choose this piece</h3>
+                            <p id="productWhy">Designed for clients who want heirloom character paired with modern elegance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="catalog-section">
+            <div class="container">
+                <div class="catalog-header">
+                    <div>
+                        <p class="text-label">You may also love</p>
+                        <h2 class="heading-display catalog-title">Related Pieces</h2>
+                    </div>
+                </div>
+                <div class="related-products" id="relatedProducts"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <p class="footer-logo">Aurelia <span>Atelier</span></p>
+                    <p class="footer-tagline">Handcrafted gold jewelry of exceptional quality and timeless elegance.</p>
+                    <div class="footer-contact-info">
+                        <p>742 Fifth Avenue, Suite 1200</p>
+                        <p>New York, NY 10019</p>
+                        <p><a href="tel:+12125551234">+1 (212) 555-1234</a></p>
+                        <p><a href="mailto:hello@aureliaatelier.com">hello@aureliaatelier.com</a></p>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Collections</h4>
+                    <ul class="footer-links">
+                        <li><a href="all-collections.html">All Collections</a></li>
+                        <li><a href="bridal.html">Bridal</a></li>
+                        <li><a href="everyday-elegance.html">Everyday Elegance</a></li>
+                        <li><a href="statement.html">Statement Pieces</a></li>
+                        <li><a href="mens-collection.html">Men's Collection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#story">Our Story</a></li>
+                        <li><a href="index.html#craftsmanship">Craftsmanship</a></li>
+                        <li><a href="index.html#contact">Visit Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-about">
+                    <h4 class="footer-column-title">About This Website</h4>
+                    <p>Luxury fine jewelry experience with editorial styling and handcrafted craftsmanship.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">Â© 2026 Aurelia. Design by Aurelia</p>
+                <div class="footer-social"><a href="#">Instagram</a><a href="#">Pinterest</a><a href="#">Facebook</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="templatemo-maison-doree.js"></script>
+    <script>
+        const productCatalog = {
+            aurora: {
+                id: 'aurora',
+                name: 'Aurora',
+                price: '$4,850',
+                collection: 'Signature Pendant',
+                tag: 'Pendant',
+                description: 'A handcrafted pendant inspired by the northern lights, with hand-hammered 22k gold and a luminous aquamarine center.',
+                why: 'Made for collectors who want a deeply personal statement piece with sculptural depth and exceptional light play.',
+                images: ['images/maison-hero-02.jpg', 'images/maison-hero-01.jpg', 'images/maison-doree-06.jpg'],
+                specs: ['22K yellow gold', 'Aquamarine center', '18-inch chain', 'Hand-finished texture'],
+                variants: [
+                    { label: 'Aquamarine', price: 0 },
+                    { label: 'Diamond Halo', price: 1200 },
+                    { label: 'Midnight Onyx', price: 900 }
+                ],
+                related: ['luna', 'celeste', 'etoile']
+            },
+            luna: {
+                id: 'luna',
+                name: 'Luna',
+                price: '$2,950',
+                collection: 'Everyday Elegance',
+                tag: 'Ring',
+                description: 'A softly sculpted ring with a warm gold profile, designed to be luminous, balanced, and effortless in everyday wear.',
+                why: 'An understated jewel that brings a refined glow to day-to-day styling without ever feeling overworked.',
+                images: ['images/maison-doree-01.jpg', 'images/maison-doree-02.jpg', 'images/maison-doree-04.jpg'],
+                specs: ['18K gold finish', 'Soft domed silhouette', 'Adjustable sizing', 'Daily wear profile'],
+                variants: [
+                    { label: 'Warm Gold', price: 0 },
+                    { label: 'Ivory Gold', price: 650 },
+                    { label: 'Champagne Diamond', price: 1800 }
+                ],
+                related: ['serin', 'aster', 'aurora']
+            },
+            etoile: {
+                id: 'etoile',
+                name: 'Etoile',
+                price: '$6,400',
+                collection: 'Bridal',
+                tag: 'Ring',
+                description: 'A bridal signature ring with a pavÃ© halo and luminous profile that celebrates commitment with timeless detail.',
+                why: 'Crafted to feel romantic, modern, and deeply personalan ideal heirloom for the most luminous chapters of life.',
+                images: ['images/maison-hero-03.jpg', 'images/maison-doree-05.jpg', 'images/maison-hero-02.jpg'],
+                specs: ['PavÃ© halo', '18K gold', 'Bridal profile', 'Hand-set stones'],
+                variants: [
+                    { label: 'Bridal Gold', price: 0 },
+                    { label: 'Diamond PavÃ©', price: 1600 },
+                    { label: 'Pearl Halo', price: 950 }
+                ],
+                related: ['lumiere', 'amour', 'aurora']
+            },
+            celeste: {
+                id: 'celeste',
+                name: 'CÃ©leste',
+                price: '$4,200',
+                collection: 'Statement',
+                tag: 'Pendant',
+                description: 'A fluid pendant balancing sculptural geometry and soft movement, echoing the fluidity of the night sky.',
+                why: 'Ideal for clients seeking a confident piece that feels expressive, artistic, and unmistakably luxurious.',
+                images: ['images/maison-hero-01.jpg', 'images/maison-hero-02.jpg', 'images/maison-doree-06.jpg'],
+                specs: ['Fluid silhouette', '22K gold', 'Architectural balance', 'Statement length'],
+                variants: [
+                    { label: 'Champagne Gold', price: 0 },
+                    { label: 'Emerald Accent', price: 1100 },
+                    { label: 'Pearl Drop', price: 650 }
+                ],
+                related: ['vanta', 'solstice', 'aurora']
+            },
+            solstice: {
+                id: 'solstice',
+                name: 'Solstice',
+                price: '$3,680',
+                collection: 'Statement',
+                tag: 'Cuff',
+                description: 'A bold architectural cuff with fluid proportions and polished edges made to catch the light from every angle.',
+                why: 'A statement jewel designed for people who want a signature presence without sacrificing elegance.',
+                images: ['images/maison-doree-02.jpg', 'images/maison-doree-03.jpg', 'images/maison-doree-04.jpg'],
+                specs: ['Open cuff', 'Architectural finish', 'Hand-polished', 'Statement size'],
+                variants: [
+                    { label: 'Classic Gold', price: 0 },
+                    { label: 'Pearl Accent', price: 750 },
+                    { label: 'Sapphire Edge', price: 1200 }
+                ],
+                related: ['atlas', 'echo', 'luna']
+            },
+            marceau: {
+                id: 'marceau',
+                name: 'Marceau',
+                price: '$3,880',
+                collection: 'Heritage',
+                tag: 'Ring',
+                description: 'A vintage-inspired ring with a sculpted profile and a weighty, heirloom-like presence that feels timeless.',
+                why: 'The perfect balance of antique elegance and modern wearability for clients who value lasting character.',
+                images: ['images/maison-doree-03.jpg', 'images/maison-doree-05.jpg', 'images/maison-hero-03.jpg'],
+                specs: ['Signet form', 'Vintage inspiration', 'Heirloom feel', 'Brushed finish'],
+                variants: [
+                    { label: 'Antique Gold', price: 0 },
+                    { label: 'Moonstone Inlay', price: 880 },
+                    { label: 'Emerald Detail', price: 1350 }
+                ],
+                related: ['maison', 'epoque', 'aurel']
+            },
+            monarch: {
+                id: 'monarch',
+                name: 'Monarch',
+                price: '$3,260',
+                collection: 'Menâ€™s Collection',
+                tag: 'Ring',
+                description: 'A structured signet ring with powerful lines and a confident balance designed for contemporary men.',
+                why: 'Built for everyday authority and understated luxuryclean, strong, and deeply wearable.',
+                images: ['images/maison-doree-04.jpg', 'images/maison-doree-05.jpg', 'images/maison-hero-01.jpg'],
+                specs: ['Signet profile', '18K gold finish', 'Powerful form', 'Modern silhouette'],
+                variants: [
+                    { label: 'Bold Gold', price: 0 },
+                    { label: 'Obsidian Finish', price: 480 },
+                    { label: 'Diamond Set', price: 1350 }
+                ],
+                related: ['apex', 'atlas', 'noir']
+            },
+            apex: {
+                id: 'apex',
+                name: 'Apex',
+                price: '$4,880',
+                collection: 'Menâ€™s Collection',
+                tag: 'Pendant',
+                description: 'A precise pendant with architectural balance and a clean profile that feels powerful and elegant.',
+                why: 'A refined piece for men who prefer subtle confidence, clean lines, and enduring craftsmanship.',
+                images: ['images/maison-hero-01.jpg', 'images/maison-hero-02.jpg', 'images/maison-doree-04.jpg'],
+                specs: ['Architectural design', '22K finish', 'Strong shape', 'Hand polished'],
+                variants: [
+                    { label: 'Architectural Gold', price: 0 },
+                    { label: 'Sapphire Core', price: 950 },
+                    { label: 'Onyx Contrast', price: 700 }
+                ],
+                related: ['monarch', 'atlas', 'noir']
+            },
+            serin: {
+                id: 'serin',
+                name: 'Serin',
+                price: '$3,120',
+                collection: 'Everyday Elegance',
+                tag: 'Ring',
+                description: 'A luminous gold ring sculpted for daily refinement, with a soft profile and cool gemstone glow.',
+                why: 'Perfect for clients seeking subtle luxury with just enough brilliance to feel memorable every day.',
+                images: ['https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1200&q=80', 'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=1200&q=80', 'https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?auto=format&fit=crop&w=1200&q=80'],
+                specs: ['18K gold finish', 'Gemstone gradient', 'Soft sculptural line', 'Daily wear'],
+                variants: [
+                    { label: 'Warm Gold', price: 0 },
+                    { label: 'Diamond Edge', price: 980 },
+                    { label: 'Pearl Halo', price: 720 }
+                ],
+                related: ['aster', 'aurora', 'lumiere']
+            },
+            aster: {
+                id: 'aster',
+                name: 'Aster',
+                price: '$4,380',
+                collection: 'Statement',
+                tag: 'Pendant',
+                description: 'A dramatic pendant built around a luminous center stone and fluid gold frame inspired by celestial motion.',
+                why: 'A collectorâ€™s favorite for anyone who wants presence, elegance, and a deeply sculptural silhouette.',
+                images: ['https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?auto=format&fit=crop&w=1200&q=80', 'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=1200&q=80', 'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=1200&q=80'],
+                specs: ['Sculpted frame', 'Luminous center stone', 'Hand polished finish', 'Statement length'],
+                variants: [
+                    { label: 'Classic Gold', price: 0 },
+                    { label: 'Emerald Accent', price: 1100 },
+                    { label: 'Diamond Orbit', price: 1460 }
+                ],
+                related: ['serin', 'echo', 'celeste']
+            },
+            amour: {
+                id: 'amour',
+                name: 'Amour',
+                price: '$7,420',
+                collection: 'Bridal',
+                tag: 'Ring',
+                description: 'A romantic bridal creation with a high-drama diamond profile and delicately sculpted proportions.',
+                why: 'Designed for couples who want a jewel that feels intimate, luminous, and built for a lifetime of celebration.',
+                images: ['https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=1200&q=80', 'https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1200&q=80', 'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=1200&q=80'],
+                specs: ['PavÃ© halo', 'Bridal profile', 'Romantic detailing', 'Heirloom feel'],
+                variants: [
+                    { label: 'Bridal Gold', price: 0 },
+                    { label: 'Diamond PavÃ©', price: 1900 },
+                    { label: 'Rose Gold', price: 840 }
+                ],
+                related: ['etoile', 'lumiere', 'aurel']
+            },
+            lumiere: {
+                id: 'lumiere',
+                name: 'LumiÃ¨re',
+                price: '$5,290',
+                collection: 'Fine Earrings',
+                tag: 'Earrings',
+                description: 'A refined pair of drop earrings balancing sparkle, movement, and quiet luxury in a luminous gold frame.',
+                why: 'An elegant choice for evening wear, receptions, and signature looks that deserve a little more brilliance.',
+                images: ['https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=1200&q=80', 'https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?auto=format&fit=crop&w=1200&q=80', 'https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1200&q=80'],
+                specs: ['Drop profile', 'Hand-set stones', 'Light movement', 'Evening elegance'],
+                variants: [
+                    { label: 'Champagne Gold', price: 0 },
+                    { label: 'Pearl Drop', price: 680 },
+                    { label: 'Diamond Arc', price: 1600 }
+                ],
+                related: ['amour', 'serin', 'echo']
+            },
+            vanta: {
+                id: 'vanta',
+                name: 'Vanta',
+                price: '$3,940',
+                collection: 'Statement',
+                tag: 'Cuff',
+                description: 'A polished statement cuff with a dark contrast finish and sculptural proportions for a commanding presence.',
+                why: 'Created for clients who want contemporary impact and a jewel that stands out without feeling excessive.',
+                images: ['https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1200&q=80', 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&q=80', 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1200&q=80'],
+                specs: ['Statement cuff', 'Dark metal contrast', 'Architectural profile', 'Hand-finished'],
+                variants: [
+                    { label: 'Classic Gold', price: 0 },
+                    { label: 'Black Onyx', price: 620 },
+                    { label: 'Sapphire Set', price: 1320 }
+                ],
+                related: ['solstice', 'noir', 'atlas']
+            },
+            atlas: {
+                id: 'atlas',
+                name: 'Atlas',
+                price: '$2,840',
+                collection: 'Heritage',
+                tag: 'Bracelet',
+                description: 'A delicate chain bracelet with architectural detailing and a quietly luxurious, heirloom-led finish.',
+                why: 'A understated addition to everyday styling that still feels deeply refined and collectible.',
+                images: ['https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1200&q=80', 'https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1200&q=80', 'https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=1200&q=80'],
+                specs: ['Chain bracelet', 'Soft geometry', 'Lightweight structure', 'Daily elegance'],
+                variants: [
+                    { label: 'Chain Gold', price: 0 },
+                    { label: 'Pearl Link', price: 760 },
+                    { label: 'Diamond Link', price: 1180 }
+                ],
+                related: ['monarch', 'vanta', 'maison']
+            },
+            echo: {
+                id: 'echo',
+                name: 'Echo',
+                price: '$4,560',
+                collection: 'Signature Pendant',
+                tag: 'Pendant',
+                description: 'A refined pendant shaped to echo movement, light, and the rhythm of modern everyday rituals.',
+                why: 'A signature piece for clients who want grace, subtle drama, and a jewelled reflection of their daily life.',
+                images: ['https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&q=80', 'https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?auto=format&fit=crop&w=1200&q=80', 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1200&q=80'],
+                specs: ['Fluid silhouette', 'Luminous center', 'Modern drape', 'Private atelier finish'],
+                variants: [
+                    { label: 'Warm Gold', price: 0 },
+                    { label: 'Moonstone', price: 820 },
+                    { label: 'Sapphire Core', price: 1300 }
+                ],
+                related: ['aster', 'aurora', 'lumiere']
+            },
+            noir: {
+                id: 'noir',
+                name: 'Noir',
+                price: '$3,650',
+                collection: 'Menâ€™s Collection',
+                tag: 'Ring',
+                description: 'A strong ring with deep contrast and architectural balance, created for subtle authority and modern styling.',
+                why: 'Excellent for men seeking a sculptural, confident statement that feels tailored and elevated.',
+                images: ['https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=1200&q=80', 'https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1200&q=80', 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&q=80'],
+                specs: ['Deep contrast finish', 'Bold silhouette', 'Architectural lines', 'Hand-set detail'],
+                variants: [
+                    { label: 'Obsidian Gold', price: 0 },
+                    { label: 'Diamond Cut', price: 1280 },
+                    { label: 'Onyx Detail', price: 600 }
+                ],
+                related: ['monarch', 'vanta', 'atlas']
+            },
+            maison: {
+                id: 'maison',
+                name: 'Maison',
+                price: '$3,480',
+                collection: 'Heritage',
+                tag: 'Bracelet',
+                description: 'A refined bracelet with vintage-inspired proportions and an understated silhouette that feels iconic.',
+                why: 'A graceful heritage piece for clients who appreciate subtle luxury and strong craft traditions.',
+                images: ['https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1200&q=80', 'https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=1200&q=80', 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1200&q=80'],
+                specs: ['Heritage feel', 'Classic links', 'Lightweight wear', 'Elegant finish'],
+                variants: [
+                    { label: 'Classic Gold', price: 0 },
+                    { label: 'DiamantÃ© Accent', price: 1140 },
+                    { label: 'Pearl Charm', price: 760 }
+                ],
+                related: ['atlas', 'epoque', 'marceau']
+            },
+            epoque: {
+                id: 'epoque',
+                name: 'Ã‰poque',
+                price: '$5,180',
+                collection: 'Heritage',
+                tag: 'Necklace',
+                description: 'A necklace inspired by the quiet language of archival design, blending weight, grace, and timeless elegance.',
+                why: 'For collectors who want a deeply personal statement that feels rooted in legacy and heirloom design.',
+                images: ['https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=1200&q=80', 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1200&q=80', 'https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1200&q=80'],
+                specs: ['Antique inspiration', 'Balanced silhouette', 'Legacy finish', 'Statement necklace'],
+                variants: [
+                    { label: 'Antique Gold', price: 0 },
+                    { label: 'Gemstone Field', price: 1380 },
+                    { label: 'Diamond Chain', price: 1540 }
+                ],
+                related: ['maison', 'marceau', 'aurel']
+            },
+            aurel: {
+                id: 'aurel',
+                name: 'Aurel',
+                price: '$4,420',
+                collection: 'Fine Earrings',
+                tag: 'Earrings',
+                description: 'A softly sculpted earring with a delicate drop and a bright, luxe silhouette designed to move beautifully.',
+                why: 'An elevated choice for evenings, ceremonies, and precious moments that deserve a refined signature.',
+                images: ['https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1200&q=80', 'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=1200&q=80', 'https://images.unsplash.com/photo-1535632787350-4e68ef0ac584?auto=format&fit=crop&w=1200&q=80'],
+                specs: ['Delicate drop', 'Luminous finish', 'Soft movement', 'Evening profile'],
+                variants: [
+                    { label: 'Gold Drop', price: 0 },
+                    { label: 'Emerald Pivot', price: 980 },
+                    { label: 'Diamond Drop', price: 1450 }
+                ],
+                related: ['amour', 'lumiere', 'epoque']
+            }
+        };
+
+        const productMap = {
+            aurora: productCatalog.aurora,
+            luna: productCatalog.luna,
+            etoile: productCatalog.etoile,
+            celeste: productCatalog.celeste,
+            solstice: productCatalog.solstice,
+            marceau: productCatalog.marceau,
+            monarch: productCatalog.monarch,
+            apex: productCatalog.apex,
+            serin: productCatalog.serin,
+            aster: productCatalog.aster,
+            amour: productCatalog.amour,
+            lumiere: productCatalog.lumiere,
+            vanta: productCatalog.vanta,
+            atlas: productCatalog.atlas,
+            echo: productCatalog.echo,
+            noir: productCatalog.noir,
+            maison: productCatalog.maison,
+            epoque: productCatalog.epoque,
+            aurel: productCatalog.aurel
+        };
+
+        function setProductSeo(product) {
+            const canonical = `https://aureliaatelier.com/product.html?product=${product.id}`;
+            const keywordString = `${product.name}, ${product.collection}, ${product.tag}, fine gold jewelry, luxury jewelry, handcrafted ${product.tag.toLowerCase()}, ${product.collection.toLowerCase()} jewelry, Aurelia Atelier`;
+
+            document.title = `${product.name} | Aurelia Atelier`;
+            document.querySelector('meta[name="description"]').setAttribute('content', `${product.name} by Aurelia Atelier — ${product.description}`);
+            document.querySelector('meta[name="keywords"]').setAttribute('content', keywordString);
+            document.querySelector('meta[property="og:title"]').setAttribute('content', `${product.name} | Aurelia Atelier`);
+            document.querySelector('meta[property="og:description"]').setAttribute('content', product.description);
+            document.querySelector('meta[property="og:image"]').setAttribute('content', product.images[0]);
+            const canonicalLink = document.querySelector('link[rel="canonical"]');
+            if (canonicalLink) canonicalLink.setAttribute('href', canonical);
+
+            const schemaNode = document.getElementById('productSchema');
+            if (schemaNode) {
+                const priceValue = Number(String(product.price).replace(/[^0-9.]/g, '')) || 0;
+                schemaNode.textContent = JSON.stringify({
+                    "@context": "https://schema.org",
+                    "@type": "Product",
+                    "name": product.name,
+                    "brand": { "@type": "Brand", "name": "Aurelia Atelier" },
+                    "category": product.collection,
+                    "description": product.description,
+                    "material": "18K gold",
+                    "image": product.images,
+                    "offers": {
+                        "@type": "Offer",
+                        "url": canonical,
+                        "priceCurrency": "USD",
+                        "price": String(priceValue),
+                        "availability": "https://schema.org/InStock"
+                    }
+                });
+            }
+        }
+
+        const stoneOptions = document.getElementById('stoneOptions');
+        const params = new URLSearchParams(window.location.search);
+        const productKey = params.get('product') || 'aurora';
+        const product = productMap[productKey] || productCatalog.aurora;
+        setProductSeo(product);
+
+        document.getElementById('productCollection').textContent = product.collection;
+        document.getElementById('productName').textContent = product.name;
+        document.getElementById('productPrice').textContent = product.price;
+        document.getElementById('productTag').textContent = product.tag;
+        document.getElementById('productDescription').textContent = product.description;
+        document.getElementById('productWhy').textContent = product.why;
+
+        const cartButton = document.querySelector('[data-add-to-cart-primary]');
+        const wishlistButton = document.querySelector('[data-toggle-wishlist]');
+        if (cartButton) {
+            cartButton.dataset.productId = productKey;
+        }
+        if (wishlistButton) {
+            wishlistButton.dataset.productId = productKey;
+        }
+
+        if (stoneOptions && product.variants) {
+            product.variants.forEach((option, index) => {
+                const button = document.createElement('button');
+                button.type = 'button';
+                button.className = 'stone-option' + (index === 0 ? ' is-selected' : '');
+                button.dataset.selectedStone = option.label;
+                button.innerHTML = `<span>${option.label}</span><small>${option.price ? '+' + '$' + option.price.toLocaleString() : 'Included'}</small>`;
+                button.addEventListener('click', () => {
+                    document.querySelectorAll('.stone-option').forEach(item => item.classList.remove('is-selected'));
+                    button.classList.add('is-selected');
+                    document.querySelectorAll('.stone-option').forEach(item => item.removeAttribute('data-selected-stone'));
+                    button.dataset.selectedStone = option.label;
+                    const priceValue = document.getElementById('productPrice');
+                    const basePrice = Number((product.price || '$0').replace(/[^\d]/g, ''));
+                    const adjusted = basePrice + option.price;
+                    priceValue.textContent = '$' + adjusted.toLocaleString();
+                    const addButton = document.querySelector('[data-add-to-cart-primary]');
+                    if (addButton) {
+                        addButton.dataset.variant = option.label;
+                    }
+                });
+                stoneOptions.appendChild(button);
+            });
+        }
+
+        const mainImage = document.getElementById('productMainImage');
+        const thumbs = document.getElementById('productThumbs');
+        const specs = document.getElementById('productSpecs');
+
+        mainImage.src = product.images[0];
+        mainImage.alt = product.name;
+
+        product.images.forEach((image, index) => {
+            const thumb = document.createElement('button');
+            thumb.className = 'product-thumb' + (index === 0 ? ' is-active' : '');
+            thumb.type = 'button';
+            thumb.innerHTML = '<img src="' + image + '" alt="' + product.name + ' thumbnail">';
+            thumb.addEventListener('click', () => {
+                mainImage.src = image;
+                document.querySelectorAll('.product-thumb').forEach(item => item.classList.remove('is-active'));
+                thumb.classList.add('is-active');
+            });
+            thumbs.appendChild(thumb);
+        });
+
+        product.specs.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = item;
+            specs.appendChild(li);
+        });
+
+        const relatedContainer = document.getElementById('relatedProducts');
+        product.related.forEach(itemKey => {
+            const relatedProduct = productMap[itemKey];
+            if (!relatedProduct) return;
+            const card = document.createElement('a');
+            card.href = 'product.html?product=' + itemKey;
+            card.className = 'related-card';
+            card.innerHTML = `
+                <div class="related-card-image"><img src="${relatedProduct.images[0]}" alt="${relatedProduct.name}"></div>
+                <div class="related-card-content">
+                    <h3>${relatedProduct.name}</h3>
+                    <p>${relatedProduct.collection}</p>
+                    <span>${relatedProduct.price}</span>
+                </div>
+            `;
+            relatedContainer.appendChild(card);
+        });
+    </script>
+</body>
+</html>
+

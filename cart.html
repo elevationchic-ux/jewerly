@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Bag | Aurelia</title>
+    <meta name="description" content="Review your Aurelia luxury jewelry bag with personalized stone finishes, engraving options, and secure checkout.">
+    <meta name="robots" content="noindex,follow">
+    <meta property="og:title" content="Shopping Bag | Aurelia">
+    <meta property="og:description" content="Luxury jewelry shopping bag with secure checkout and atelier personalization.">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="shortcut icon" href="favicon.svg" type="image/svg+xml"><link rel="canonical" href="https://aureliaatelier.com/cart.html">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="templatemo-maison-style.css">
+</head>
+<body class="catalog-page">
+    <header class="site-header" id="header">
+        <div class="container">
+            <div class="header-inner">
+                <a href="index.html" class="logo">Aurelia <span>Atelier</span></a>
+                <nav class="nav-main">
+                    <a href="all-collections.html">Collections</a>
+                    <a href="index.html#story">Our Story</a>
+                    <a href="index.html#craftsmanship">Craftsmanship</a>
+                    <a href="index.html#contact">Visit Us</a>
+                    <a href="index.html#contact" class="nav-cta">Book Appointment</a>
+                </nav>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-overlay" id="mobileOverlay"></div>
+    <nav class="mobile-nav" id="mobileNav">
+        <button class="mobile-nav-close" id="mobileNavClose">Ã—</button>
+        <ul class="mobile-nav-links">
+            <li><a href="all-collections.html">Collections</a></li>
+            <li><a href="index.html#story">Our Story</a></li>
+            <li><a href="index.html#craftsmanship">Craftsmanship</a></li>
+            <li><a href="index.html#contact">Visit Us</a></li>
+        </ul>
+        <div class="mobile-nav-cta"><a href="index.html#contact" class="btn-primary">Book Appointment</a></div>
+    </nav>
+
+    <main class="cart-page-shell">
+        <section class="cart-page-section">
+            <div class="container">
+                <div class="cart-topline">
+                    <p class="text-label">Luxury shopping bag</p>
+                    <h1 class="heading-display cart-page-title">Your Selection</h1>
+                </div>
+
+                <div class="cart-layout">
+                    <div class="cart-items-panel" id="cartItemsPanel"></div>
+                    <aside class="cart-summary-panel">
+                        <div class="summary-card">
+                            <p class="text-label">Order summary</p>
+                            <h2>Secure checkout</h2>
+                            <div class="summary-line"><span>Subtotal</span><strong id="summarySubtotal">$0</strong></div>
+                            <div class="summary-line"><span>Shipping</span><strong id="summaryShipping">$0</strong></div>
+                            <div class="summary-line"><span>Insurance</span><strong id="summaryInsurance">$0</strong></div>
+                            <div class="summary-line total"><span>Total</span><strong id="summaryTotal">$0</strong></div>
+                            <button type="button" class="btn-primary checkout-button">Proceed to checkout</button>
+                            <a href="all-collections.html" class="btn-secondary btn-secondary-ghost continuation-link">Continue shopping</a>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <p class="footer-logo">Aurelia <span>Atelier</span></p>
+                    <p class="footer-tagline">Handcrafted gold jewelry of exceptional quality and timeless elegance.</p>
+                    <div class="footer-contact-info">
+                        <p>742 Fifth Avenue, Suite 1200</p>
+                        <p>New York, NY 10019</p>
+                        <p><a href="tel:+12125551234">+1 (212) 555-1234</a></p>
+                        <p><a href="mailto:hello@aureliaatelier.com">hello@aureliaatelier.com</a></p>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Collections</h4>
+                    <ul class="footer-links">
+                        <li><a href="all-collections.html">All Collections</a></li>
+                        <li><a href="bridal.html">Bridal</a></li>
+                        <li><a href="everyday-elegance.html">Everyday Elegance</a></li>
+                        <li><a href="statement.html">Statement Pieces</a></li>
+                        <li><a href="mens-collection.html">Men's Collection</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-column-title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#story">Our Story</a></li>
+                        <li><a href="index.html#craftsmanship">Craftsmanship</a></li>
+                        <li><a href="index.html#contact">Visit Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column footer-about">
+                    <h4 class="footer-column-title">About This Website</h4>
+                    <p>Luxury fine jewelry experience with editorial styling and handcrafted craftsmanship.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">Â© 2026 Aurelia. Design by Aurelia</p>
+                <div class="footer-social"><a href="#">Instagram</a><a href="#">Pinterest</a><a href="#">Facebook</a></div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="templatemo-maison-doree.js"></script>
+    <script>
+        const cartItemsPanel = document.getElementById('cartItemsPanel');
+
+        function readCart() {
+            try {
+                return JSON.parse(localStorage.getItem('maison-doree-cart-v1')) || [];
+            } catch (error) {
+                return [];
+            }
+        }
+
+        function currency(value) {
+            return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(value);
+        }
+
+        function renderCartPage() {
+            const cart = readCart();
+
+            if (!cart.length) {
+                cartItemsPanel.innerHTML = `
+                    <div class="empty-cart-state">
+                        <p class="text-label">No pieces yet</p>
+                        <h2>Your bag is empty.</h2>
+                        <p>Discover our signature pieces or create a custom edition with the atelier team.</p>
+                        <div class="empty-cart-actions">
+                            <a href="all-collections.html" class="btn-primary">Explore collections</a>
+                        </div>
+                    </div>
+                `;
+                document.getElementById('summarySubtotal').textContent = currency(0);
+                document.getElementById('summaryShipping').textContent = currency(0);
+                document.getElementById('summaryInsurance').textContent = currency(0);
+                document.getElementById('summaryTotal').textContent = currency(0);
+                return;
+            }
+
+            const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            const shipping = subtotal > 0 ? 120 : 0;
+            const insurance = subtotal > 0 ? 180 : 0;
+            const total = subtotal + shipping + insurance;
+
+            document.getElementById('summarySubtotal').textContent = currency(subtotal);
+            document.getElementById('summaryShipping').textContent = currency(shipping);
+            document.getElementById('summaryInsurance').textContent = currency(insurance);
+            document.getElementById('summaryTotal').textContent = currency(total);
+
+            cartItemsPanel.innerHTML = cart.map(item => `
+                <article class="cart-item-card">
+                    <div class="cart-item-image">
+                        <img src="${item.image}" alt="${item.name}">
+                    </div>
+                    <div class="cart-item-copy">
+                        <div class="cart-item-header">
+                            <div>
+                                <p class="text-label">${item.variant}</p>
+                                <h3>${item.name}</h3>
+                            </div>
+                            <button type="button" class="cart-remove-btn" data-remove-cart-item="${item.cartKey}">Remove</button>
+                        </div>
+                        <p class="cart-item-meta">${item.customDetails && item.customDetails.engraving ? 'Engraving: ' + item.customDetails.engraving : 'Signature atelier finish'} </p>
+                        <div class="cart-item-footer">
+                            <span class="cart-item-price">${currency(item.price)}</span>
+                            <div class="cart-quantity-control">
+                                <span>Qty ${item.quantity}</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            `).join('');
+
+            cartItemsPanel.querySelectorAll('[data-remove-cart-item]').forEach(button => {
+                button.addEventListener('click', () => {
+                    const next = readCart().filter(item => item.cartKey !== button.dataset.removeCartItem);
+                    localStorage.setItem('maison-doree-cart-v1', JSON.stringify(next));
+                    renderCartPage();
+                    if (window && window.dispatchEvent) {
+                        window.dispatchEvent(new CustomEvent('maisonDoree:cartUpdated'));
+                    }
+                });
+            });
+        }
+
+        document.querySelector('.checkout-button').addEventListener('click', () => {
+            window.location.href = 'checkout.html';
+        });
+
+        renderCartPage();
+    </script>
+</body>
+</html>
+
