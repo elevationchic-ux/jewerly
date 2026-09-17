@@ -15,13 +15,21 @@ function ensureLoader() {
       document.body.insertBefore(loader, document.body.firstChild);
    }
 
-   document.body.classList.add('is-loading');
-   window.addEventListener('load', () => {
+   const hideLoader = () => {
       window.setTimeout(() => {
          loader.classList.add('hidden');
          document.body.classList.remove('is-loading');
-      }, 650);
-   });
+      }, 350);
+   };
+
+   if (document.readyState === 'complete') {
+      hideLoader();
+   } else {
+      document.body.classList.add('is-loading');
+      window.addEventListener('load', hideLoader);
+      // Failsafe: never block page if external assets lag
+      window.setTimeout(hideLoader, 1200);
+   }
 }
 
 ensureLoader();
@@ -737,25 +745,48 @@ bindQuickProductActions();
 bindDetailWishlistButton();
 bindAddToBagButton();
 
-// Intersection Observer for scroll animations
-const observerOptions = {
-   threshold: 0.1,
-   rootMargin: '0px 0px -50px 0px'
-};
+// Graceful Intersection Observer for luxury scroll animations
+if ('IntersectionObserver' in window) {
+   const observerOptions = {
+      threshold: 0.02,
+      rootMargin: '0px 0px 60px 0px'
+   };
 
-const observer = new IntersectionObserver((entries) => {
-   entries.forEach(entry => {
-      if (entry.isIntersecting) {
-         entry.target.style.opacity = '1';
-         entry.target.style.transform = 'translateY(0)';
+   const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+         if (entry.isIntersecting) {
+            entry.target.classList.add('is-revealed');
+            entry.target.style.opacity = '1';
+            entry.target.style.transform = 'translateY(0)';
+            observer.unobserve(entry.target);
+         }
+      });
+   }, observerOptions);
+
+   // Only animate sections that start below the visible fold
+   document.querySelectorAll('section.craft-section, section.testimonials, section.maison-commitments').forEach(section => {
+      const rect = section.getBoundingClientRect();
+      if (rect.top > window.innerHeight) {
+         section.style.opacity = '0';
+         section.style.transform = 'translateY(24px)';
+         section.style.transition = 'opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1)';
+         observer.observe(section);
+      } else {
+         section.style.opacity = '1';
+         section.style.transform = 'translateY(0)';
       }
    });
-}, observerOptions);
 
-// Add fade-in animation to sections
-document.querySelectorAll('section:not(.hero)').forEach(section => {
-   section.style.opacity = '0';
-   section.style.transform = 'translateY(30px)';
-   section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
-   observer.observe(section);
-});
+   // Failsafe: guarantee all sections are 100% visible
+   window.setTimeout(() => {
+      document.querySelectorAll('section').forEach(section => {
+         section.style.opacity = '1';
+         section.style.transform = 'translateY(0)';
+      });
+   }, 600);
+} else {
+   document.querySelectorAll('section').forEach(section => {
+      section.style.opacity = '1';
+      section.style.transform = 'translateY(0)';
+   });
+}

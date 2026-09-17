@@ -3032,11 +3032,11 @@ a {
 .catalog-card {
 	display: flex;
 	flex-direction: column;
-	background: var(--card-bg-lux);
-	border: 1px solid var(--gold-border);
-	border-radius: var(--card-radius);
-	box-shadow: var(--card-shadow-lux);
-	transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+	background: linear-gradient(180deg, #ffffff 0%, #faf6f0 100%);
+	border: 1px solid rgba(197, 155, 39, 0.28);
+	border-radius: 12px;
+	box-shadow: 0 10px 28px -6px rgba(28, 22, 17, 0.07), inset 0 1px 0 rgba(255, 255, 255, 0.95);
+	transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.45s ease, border-color 0.45s ease;
 	position: relative;
 	overflow: hidden;
 	text-decoration: none;
@@ -3044,75 +3044,130 @@ a {
 	height: 100%;
 }
 
-.catalog-card::after {
+.catalog-card::before {
 	content: "";
 	position: absolute;
-	bottom: 0;
+	top: 0;
 	left: 0;
-	width: 0;
-	height: 2px;
-	background: var(--gold-gradient);
-	transition: width 0.4s cubic-bezier(0.16, 1, 0.3, 1);
-	pointer-events: none;
-	z-index: 3;
+	right: 0;
+	height: 3px;
+	background: linear-gradient(90deg, transparent 0%, #dfb74a 30%, #c59b27 70%, transparent 100%);
+	opacity: 0.55;
+	transition: opacity 0.4s ease, height 0.4s ease;
+	z-index: 4;
 }
 
 .catalog-card:hover {
-	transform: translateY(-6px);
-	border-color: var(--gold-border-hover);
-	box-shadow: var(--card-shadow-hover);
+	transform: translateY(-8px);
+	border-color: rgba(223, 183, 74, 0.7);
+	box-shadow: 0 24px 52px -10px rgba(197, 155, 39, 0.22), 0 0 0 1px rgba(223, 183, 74, 0.25);
 }
 
-.catalog-card:hover::after {
-	width: 100%;
+.catalog-card:hover::before {
+	opacity: 1;
+	height: 4px;
 }
 
 .catalog-card-media {
 	position: relative;
-	height: clamp(280px, 30vw, 420px);
+	width: 100%;
+	aspect-ratio: 4 / 3.4;
+	min-height: 250px;
 	overflow: hidden;
-	background: #181410;
+	background: radial-gradient(circle at 50% 50%, #201a15 0%, #120e0b 100%);
 }
 
 .catalog-card-media img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	transition: transform 0.8s cubic-bezier(0.16, 1, 0.3, 1), filter 0.8s ease;
+	transition: transform 0.85s cubic-bezier(0.16, 1, 0.3, 1), filter 0.85s ease;
 	display: block;
 }
 
 .catalog-card:hover .catalog-card-media img {
-	transform: scale(1.06);
-	filter: brightness(1.03);
+	transform: scale(1.07);
+	filter: brightness(1.04) contrast(1.02);
 }
 
 .catalog-card-content {
-	padding: 1.4rem 1.35rem 2rem;
+	padding: 1.5rem 1.4rem 1.5rem;
 	display: flex;
 	flex-direction: column;
 	flex-grow: 1;
 	position: relative;
+	background: linear-gradient(180deg, #ffffff 0%, #faf7f2 100%);
+	border-top: 1px solid rgba(197, 155, 39, 0.16);
+}
+
+.catalog-card-header {
+	display: flex;
+	align-items: baseline;
+	justify-content: space-between;
+	gap: 0.75rem;
+	margin-bottom: 0.45rem;
 }
 
 .catalog-card-content h3 {
 	font-family: var(--font-display);
-	font-size: clamp(1.6rem, 2vw, 1.95rem);
-	font-weight: 400;
-	margin-bottom: 0.45rem;
-	color: var(--color-charcoal);
-	transition: color 0.3s ease;
+	font-size: clamp(1.45rem, 1.8vw, 1.8rem);
+	font-weight: 500;
+	color: #12100e;
+	margin: 0;
+	transition: color 0.35s ease;
+	letter-spacing: 0.01em;
 }
 
 .catalog-card:hover .catalog-card-content h3 {
-	color: var(--color-gold-dark);
+	color: #c59b27;
+}
+
+.catalog-card-pill {
+	font-family: var(--font-body);
+	font-size: 0.72rem;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: #9a7318;
+	background: rgba(197, 155, 39, 0.08);
+	border: 1px solid rgba(197, 155, 39, 0.22);
+	border-radius: 20px;
+	padding: 0.22rem 0.65rem;
+	white-space: nowrap;
+	font-weight: 500;
 }
 
 .catalog-card-content p {
-	font-size: 0.94rem;
+	font-size: 0.92rem;
 	line-height: 1.6;
-	color: var(--color-charcoal-soft);
+	color: #584f47;
 	flex-grow: 1;
+	margin: 0.4rem 0 1.1rem;
+}
+
+.catalog-card-footer {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	padding-top: 0.85rem;
+	border-top: 1px solid rgba(197, 155, 39, 0.12);
+}
+
+.catalog-card-explore {
+	font-family: var(--font-body);
+	font-size: 0.76rem;
+	letter-spacing: 0.14em;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #9a7318;
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	transition: color 0.3s ease, gap 0.3s ease;
+}
+
+.catalog-card:hover .catalog-card-explore {
+	color: #c59b27;
+	gap: 0.65rem;
 }
 
 .catalog-toolbar {
@@ -5251,26 +5306,6 @@ a {
 	}
 }
 
-/* ---- LUXURY COLLECTION CARD HOVER CARET ---- */
-
-.catalog-card-content::after {
-	content: "→";
-	position: absolute;
-	bottom: 1.5rem;
-	right: 1.35rem;
-	font-family: var(--font-body);
-	font-size: 1rem;
-	color: var(--color-gold-light);
-	opacity: 0;
-	transform: translateX(-6px);
-	transition: opacity 0.35s ease, transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
-	pointer-events: none;
-}
-
-.catalog-card:hover .catalog-card-content::after {
-	opacity: 1;
-	transform: translateX(0);
-}
 
 /* ---- OVERFLOW SAFETY ---- */
 
