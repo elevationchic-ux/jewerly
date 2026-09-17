@@ -1,255 +1,510 @@
 ﻿<!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Checkout | Aurelia</title>
+
     <meta name="description" content="Secure checkout for Aurelia luxury jewelry, with tailored delivery and payment options for fine gold pieces.">
+
     <meta name="robots" content="noindex,follow">
+
     <meta property="og:title" content="Checkout | Aurelia">
+
     <meta property="og:description" content="Secure luxury jewellery checkout for handcrafted gold pieces.">
+
     <meta name="twitter:card" content="summary_large_image">
+
     <link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="shortcut icon" href="favicon.svg" type="image/svg+xml"><link rel="canonical" href="https://aureliaatelier.com/checkout.html">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="templatemo-maison-style.css">
+
 </head>
+
 <body class="catalog-page">
+
     <header class="site-header" id="header">
+
         <div class="container">
+
             <div class="header-inner">
+
                 <a href="index.html" class="logo">Aurelia <span>Atelier</span></a>
+
                 <nav class="nav-main">
+
                     <a href="all-collections.html">Collections</a>
+
                     <a href="index.html#story">Our Story</a>
+
                     <a href="index.html#craftsmanship">Craftsmanship</a>
+
                     <a href="index.html#contact">Visit Us</a>
+
                     <a href="index.html#contact" class="nav-cta">Book Appointment</a>
+
                 </nav>
+
                 <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+
             </div>
+
         </div>
+
     </header>
 
+
+
     <div class="mobile-overlay" id="mobileOverlay"></div>
+
     <nav class="mobile-nav" id="mobileNav">
-        <button class="mobile-nav-close" id="mobileNavClose">Ã</button>
+
+        <button class="mobile-nav-close" id="mobileNavClose">&times;</button>
+
         <ul class="mobile-nav-links">
+
             <li><a href="all-collections.html">Collections</a></li>
+
             <li><a href="index.html#story">Our Story</a></li>
+
             <li><a href="index.html#craftsmanship">Craftsmanship</a></li>
+
             <li><a href="index.html#contact">Visit Us</a></li>
+
         </ul>
+
         <div class="mobile-nav-cta"><a href="index.html#contact" class="btn-primary">Book Appointment</a></div>
+
     </nav>
 
+
+
     <main class="checkout-page-shell">
+
         <section class="checkout-page-section">
+
             <div class="container">
+
                 <div class="checkout-hero-block">
+
                     <p class="text-label">Secure checkout</p>
+
                     <h1 class="heading-display checkout-page-title">Complete your order</h1>
+
                 </div>
+
+
 
                 <div class="checkout-layout">
+
                     <form class="checkout-form-panel" id="checkoutForm">
+
                         <div class="checkout-step">
+
                             <p class="text-label">Contact & delivery</p>
+
                             <div class="checkout-fields">
+
                                 <label>
+
                                     <span>Full name</span>
+
                                     <input type="text" name="fullName" placeholder="Your full name" required>
+
                                 </label>
+
                                 <label>
+
                                     <span>Email</span>
+
                                     <input type="email" name="email" placeholder="name@email.com" required>
+
                                 </label>
+
                                 <label>
+
                                     <span>Shipping address</span>
+
                                     <input type="text" name="address" placeholder="742 Fifth Avenue" required>
+
                                 </label>
+
                                 <div class="checkout-two-col">
+
                                     <label>
+
                                         <span>City</span>
+
                                         <input type="text" name="city" placeholder="New York" required>
+
                                     </label>
+
                                     <label>
+
                                         <span>Postal code</span>
+
                                         <input type="text" name="postal" placeholder="10019" required>
+
                                     </label>
+
                                 </div>
+
                                 <label>
+
                                     <span>Country</span>
+
                                     <select name="country" required>
+
                                         <option value="">Select your country</option>
+
                                         <option>United States</option>
+
                                         <option>United Kingdom</option>
+
                                         <option>France</option>
+
                                         <option>Switzerland</option>
+
                                         <option>United Arab Emirates</option>
+
                                     </select>
+
                                 </label>
+
                             </div>
+
                         </div>
 
+
+
                         <div class="checkout-step">
+
                             <p class="text-label">Payment</p>
+
                             <div class="checkout-fields">
+
                                 <label>
+
                                     <span>Cardholder name</span>
+
                                     <input type="text" name="cardName" placeholder="Name on card" required>
+
                                 </label>
+
                                 <label>
+
                                     <span>Card number</span>
+
                                     <input type="text" inputmode="numeric" name="cardNumber" placeholder="1234 5678 9012 3456" required>
+
                                 </label>
+
                                 <div class="checkout-two-col">
+
                                     <label>
+
                                         <span>Expiry</span>
+
                                         <input type="text" name="expiry" placeholder="MM / YY" required>
+
                                     </label>
+
                                     <label>
+
                                         <span>CVC</span>
+
                                         <input type="text" inputmode="numeric" name="cvc" placeholder="123" required>
+
                                     </label>
+
                                 </div>
+
                             </div>
+
                         </div>
 
+
+
                         <div class="checkout-step">
+
                             <p class="text-label">Order note</p>
+
                             <textarea name="note" rows="4" placeholder="Ring size, gift message, or delivery request..."></textarea>
+
                         </div>
+
+
 
                         <div class="checkout-actions">
+
                             <a href="cart.html" class="btn-secondary">Back to bag</a>
+
                             <button type="submit" class="btn-primary">Pay now</button>
+
                         </div>
+
                     </form>
 
+
+
                     <aside class="checkout-summary-panel">
+
                         <div class="summary-card checkout-summary-card">
+
                             <p class="text-label">Your order</p>
+
                             <h2>Luxury summary</h2>
+
                             <div class="checkout-items" id="checkoutItems"></div>
+
                             <div class="summary-line"><span>Subtotal</span><strong id="checkoutSubtotal">$0</strong></div>
+
                             <div class="summary-line"><span>Shipping</span><strong id="checkoutShipping">$0</strong></div>
+
                             <div class="summary-line"><span>Insurance</span><strong id="checkoutInsurance">$0</strong></div>
+
                             <div class="summary-line total"><span>Total</span><strong id="checkoutTotal">$0</strong></div>
+
                             <div class="payment-trust">
+
                                 <span>Secured by Atelier Payment</span>
+
                             </div>
+
                         </div>
+
                     </aside>
+
                 </div>
+
             </div>
+
         </section>
+
     </main>
 
+
+
     <footer class="site-footer">
+
         <div class="container">
+
             <div class="footer-grid">
+
                 <div class="footer-brand">
+
                     <p class="footer-logo">Aurelia <span>Atelier</span></p>
+
                     <p class="footer-tagline">Timeless luxury diamonds, gold, and unforgettable craftsmanship.</p>
+
                 </div>
+
                 <div class="footer-column">
+
                     <h4 class="footer-column-title">Collections</h4>
+
                     <ul class="footer-links">
+
                         <li><a href="all-collections.html">All Collections</a></li>
+
                         <li><a href="bridal.html">Bridal</a></li>
+
                         <li><a href="mens-collection.html">Men's Collection</a></li>
+
                     </ul>
+
                 </div>
+
                 <div class="footer-column">
+
                     <h4 class="footer-column-title">Support</h4>
+
                     <ul class="footer-links">
+
                         <li><a href="index.html#contact">Appointments</a></li>
+
                         <li><a href="cart.html">Bag</a></li>
+
                     </ul>
+
                 </div>
+
             </div>
+
             <div class="footer-bottom">
-                <p class="footer-copyright">Â© 2026 Aurelia. All rights reserved.</p>
+
+                <p class="footer-copyright">© 2026 Aurelia. All rights reserved.</p>
+
             </div>
+
         </div>
+
     </footer>
 
+
+
     <script src="templatemo-maison-doree.js"></script>
+
     <script>
+
         function readCart() {
+
             try {
+
                 return JSON.parse(localStorage.getItem('maison-doree-cart-v1')) || [];
+
             } catch (error) {
+
                 return [];
+
             }
+
         }
+
+
 
         function currency(value) {
+
             return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD', maximumFractionDigits: 0 }).format(value);
+
         }
 
+
+
         function renderCheckoutSummary() {
+
             const cart = readCart();
+
             const itemsTarget = document.getElementById('checkoutItems');
+
+
 
             if (!itemsTarget) return;
 
+
+
             if (!cart.length) {
+
                 itemsTarget.innerHTML = '<p class="checkout-empty">Your bag is empty. Add a few signature pieces before checkout.</p>';
+
                 document.getElementById('checkoutSubtotal').textContent = currency(0);
+
                 document.getElementById('checkoutShipping').textContent = currency(0);
+
                 document.getElementById('checkoutInsurance').textContent = currency(0);
+
                 document.getElementById('checkoutTotal').textContent = currency(0);
+
                 return;
+
             }
+
+
 
             const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+
             const shipping = subtotal > 0 ? 120 : 0;
+
             const insurance = subtotal > 0 ? 180 : 0;
+
             const total = subtotal + shipping + insurance;
 
+
+
             document.getElementById('checkoutSubtotal').textContent = currency(subtotal);
+
             document.getElementById('checkoutShipping').textContent = currency(shipping);
+
             document.getElementById('checkoutInsurance').textContent = currency(insurance);
+
             document.getElementById('checkoutTotal').textContent = currency(total);
 
+
+
             itemsTarget.innerHTML = cart.map(item => `
+
                 <div class="checkout-item-row">
+
                     <div class="checkout-item-copy">
+
                         <strong>${item.name}</strong>
+
                         <span>${item.variant}</span>
+
                     </div>
+
                     <span>${currency(item.price * item.quantity)}</span>
+
                 </div>
+
             `).join('');
+
         }
 
+
+
         document.getElementById('checkoutForm').addEventListener('submit', function (event) {
+
             event.preventDefault();
 
+
+
             const form = event.currentTarget;
+
             const formData = new FormData(form);
+
             const values = Object.fromEntries(formData.entries());
+
             const missing = Object.keys(values).some(key => !values[key] && key !== 'note');
 
+
+
             if (missing) {
+
                 alert('Please complete all required checkout details before placing your order.');
+
                 return;
+
             }
 
+
+
             const orderNumber = 'MD-' + Math.floor(100000 + Math.random() * 900000);
+
             localStorage.removeItem('maison-doree-cart-v1');
+
             window.dispatchEvent(new CustomEvent('maisonDoree:cartUpdated'));
 
+
+
             alert('Payment successful. Your order ' + orderNumber + ' has been confirmed. A luxury concierge will contact you with delivery updates.');
+
             form.reset();
+
             renderCheckoutSummary();
+
         });
 
+
+
         renderCheckoutSummary();
+
     </script>
+
 </body>
+
 </html>
+
+
 

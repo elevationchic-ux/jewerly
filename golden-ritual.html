@@ -38,7 +38,7 @@
 
     <div class="mobile-overlay" id="mobileOverlay"></div>
     <nav class="mobile-nav" id="mobileNav">
-        <button class="mobile-nav-close" id="mobileNavClose">×</button>
+        <button class="mobile-nav-close" id="mobileNavClose">&times;</button>
         <ul class="mobile-nav-links">
             <li><a href="all-collections.html">Collections</a></li>
             <li><a href="index.html#story">Our Story</a></li>
@@ -60,7 +60,7 @@
                         </p>
                     </div>
                     <div class="collection-hero-visual">
-                        <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=1200&q=80" alt="Golden ritual jewelry collection">
+                        <img src="images/maison-hero-01.jpg" alt="Golden ritual jewelry collection">
                         <div class="collection-hero-badge"><strong>12 pieces</strong><span>Occasion glow</span></div>
                     </div>
                 </div>
@@ -102,7 +102,7 @@
             <div class="container">
                 <div class="catalog-cta-box">
                     <div>
-                        <p class="text-label" style="color: rgba(255,255,255,0.72);">Private consultation</p>
+                        <p class="text-label catalog-cta-label">Private consultation</p>
                         <h3>Mark the moment in gold.</h3>
                         <p>Let us shape a celebratory piece for a milestone, a gift, or a deeply personal ritual.</p>
                     </div>
@@ -160,14 +160,14 @@
     <script src="templatemo-maison-doree.js"></script>
     <script>
         const goldenRitualProducts = [
-            { id: 'solstice', name: 'Solstice', price: 3180, category: 'bracelet', tag: 'Bracelet', badge: 'Gift', image: 'https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=900&q=80' },
-            { id: 'amour', name: 'Amour', price: 7420, category: 'ring', tag: 'Ring', badge: 'Ceremonial', image: 'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=900&q=80' },
-            { id: 'aurora', name: 'Aurora', price: 4850, category: 'pendant', tag: 'Pendant', badge: 'Luminous', image: 'https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=900&q=80' },
-            { id: 'lumiere', name: 'Lumière', price: 5290, category: 'pendant', tag: 'Pendant', badge: 'Evening', image: 'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=900&q=80' },
-            { id: 'vanta', name: 'Vanta', price: 3940, category: 'cuff', tag: 'Cuff', badge: 'Bold', image: 'https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=900&q=80' },
-            { id: 'maison', name: 'Maison', price: 3480, category: 'bracelet', tag: 'Bracelet', badge: 'Heirloom', image: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=80' },
-            { id: 'luna', name: 'Luna', price: 2950, category: 'ring', tag: 'Ring', badge: 'Daily', image: 'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=900&q=80' },
-            { id: 'serin', name: 'Serin', price: 3120, category: 'ring', tag: 'Ring', badge: 'Delicate', image: 'https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=900&q=80' }
+            { id: 'solstice', name: 'Solstice', price: 3180, category: 'bracelet', tag: 'Bracelet', badge: 'Gift', image: 'https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=900&q=80' },
+            { id: 'amour', name: 'Amour', price: 7420, category: 'ring', tag: 'Ring', badge: 'Ceremonial', image: 'images/product-pink-sapphire.jpg' },
+            { id: 'aurora', name: 'Aurora', price: 4850, category: 'pendant', tag: 'Pendant', badge: 'Luminous', image: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=80' },
+            { id: 'lumiere', name: 'Lumière', price: 5290, category: 'pendant', tag: 'Pendant', badge: 'Evening', image: 'https://images.unsplash.com/photo-1629224316810-9d8805b95e76?auto=format&fit=crop&w=900&q=80' },
+            { id: 'vanta', name: 'Vanta', price: 3940, category: 'cuff', tag: 'Cuff', badge: 'Bold', image: 'images/product-vanta.jpg' },
+            { id: 'maison', name: 'Maison', price: 3480, category: 'bracelet', tag: 'Bracelet', badge: 'Heirloom', image: 'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=900&q=80' },
+            { id: 'luna', name: 'Luna', price: 2950, category: 'ring', tag: 'Ring', badge: 'Daily', image: 'images/product-wedding-rings.jpg' },
+            { id: 'serin', name: 'Serin', price: 3120, category: 'ring', tag: 'Ring', badge: 'Delicate', image: 'images/product-serin.jpg' }
         ];
 
         const goldenGrid = document.getElementById('collectionProducts');

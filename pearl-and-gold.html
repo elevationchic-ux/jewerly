@@ -1,193 +1,377 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
+
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Pearl & Gold Collection | Aurelia Atelier</title>
+
     <meta name="description" content="Discover the Pearl & Gold Collection by Aurelia Atelier, blending luminous pearls with sculptural gold for modern couture elegance and elevated occasion styling.">
+
     <meta name="keywords" content="pearl and gold collection, pearl and gold jewelry, pearl luxury jewelry, couture gold pearls, modern pearl jewelry, pearl necklace, gold and pearl bracelet, luxury pearl collection">
+
     <meta name="robots" content="index,follow">
+
     <meta property="og:title" content="Pearl & Gold | Aurelia Atelier">
+
     <meta property="og:description" content="Soft pearl tones framed in sculpted gold for a modern couture finish.">
+
     <meta property="og:image" content="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1200&q=80">
+
     <meta name="twitter:card" content="summary_large_image">
+
     <link rel="icon" type="image/svg+xml" href="favicon.svg"><link rel="shortcut icon" href="favicon.svg" type="image/svg+xml"><link rel="canonical" href="https://aureliaatelier.com/pearl-and-gold.html">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="templatemo-maison-style.css">
+
 </head>
+
 <body class="catalog-page collection-pearl">
+
     <header class="site-header" id="header">
+
         <div class="container">
+
             <div class="header-inner">
+
                 <a href="index.html" class="logo">Aurelia <span>Atelier</span></a>
+
                 <nav class="nav-main">
+
                     <a href="all-collections.html">Collections</a>
+
                     <a href="index.html#story">Our Story</a>
+
                     <a href="index.html#craftsmanship">Craftsmanship</a>
+
                     <a href="index.html#contact">Visit Us</a>
+
                     <a href="index.html#contact" class="nav-cta">Book Appointment</a>
+
                 </nav>
+
                 <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+
             </div>
+
         </div>
+
     </header>
 
+
+
     <div class="mobile-overlay" id="mobileOverlay"></div>
+
     <nav class="mobile-nav" id="mobileNav">
-        <button class="mobile-nav-close" id="mobileNavClose">Ã</button>
+
+        <button class="mobile-nav-close" id="mobileNavClose">&times;</button>
+
         <ul class="mobile-nav-links">
+
             <li><a href="all-collections.html">Collections</a></li>
+
             <li><a href="index.html#story">Our Story</a></li>
+
             <li><a href="index.html#craftsmanship">Craftsmanship</a></li>
+
             <li><a href="index.html#contact">Visit Us</a></li>
+
         </ul>
+
         <div class="mobile-nav-cta"><a href="index.html#contact" class="btn-primary">Book Appointment</a></div>
+
     </nav>
 
+
+
     <main>
+
         <section class="collection-hero">
+
             <div class="container">
+
                 <div class="collection-hero-inner">
+
                     <div>
+
                         <p class="collection-eyebrow">Pearl & Gold</p>
+
                         <h1 class="heading-display collection-page-title">Pearl & Gold Collection</h1>
+
                         <p class="collection-page-description">
+
                             A softer expression of couture luxury where polished gold frames luminous pearls, balancing softness and structure with quiet distinction.
+
                         </p>
+
                     </div>
+
                     <div class="collection-hero-visual">
-                        <img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1200&q=80" alt="Pearl and gold jewelry collection">
+
+                        <img src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=1200&q=80" alt="Pearl and gold jewelry collection">
+
                         <div class="collection-hero-badge"><strong>8 pieces</strong><span>Soft couture</span></div>
+
                     </div>
+
                 </div>
+
             </div>
+
         </section>
+
+
 
         <section class="catalog-section">
+
             <div class="container">
+
                 <div class="catalog-header">
+
                     <div>
+
                         <p class="text-label">Soft luxury</p>
+
                         <h2 class="heading-display catalog-title">Pearl-light and sculpted warmth</h2>
+
                     </div>
+
                     <p>Designed for refined events and modern bridal moments, where softness and structure meet in a beautifully balanced composition.</p>
+
                 </div>
+
+
 
                 <div class="catalog-toolbar">
+
                     <div class="catalog-filters" aria-label="Product filters">
+
                         <button class="filter-pill is-active" data-filter="all">All</button>
+
                         <button class="filter-pill" data-filter="pendant">Pendants</button>
+
                         <button class="filter-pill" data-filter="ring">Rings</button>
+
                         <button class="filter-pill" data-filter="bracelet">Bracelets</button>
+
                     </div>
+
                     <label class="catalog-sort">
+
                         <span>Sort</span>
+
                         <select aria-label="Sort products">
+
                             <option>Featured</option>
+
                             <option>Price: Low to High</option>
+
                             <option>Price: High to Low</option>
+
                         </select>
+
                     </label>
+
                 </div>
+
+
 
                 <div class="product-grid" id="collectionProducts"></div>
+
             </div>
+
         </section>
+
+
 
         <section class="catalog-cta">
+
             <div class="container">
+
                 <div class="catalog-cta-box">
+
                     <div>
-                        <p class="text-label" style="color: rgba(255,255,255,0.72);">Pearl dressing</p>
+
+                        <p class="text-label catalog-cta-label">Pearl dressing</p>
+
                         <h3>Design a jewel in pearl and gold.</h3>
+
                         <p>Our atelier creates pieces that feel tactile, timeless, and deeply romantic from the first glance.</p>
+
                     </div>
+
                     <div class="catalog-cta-actions">
+
                         <a href="index.html#contact" class="btn-primary">Book an Appointment</a>
+
                     </div>
+
                 </div>
+
             </div>
+
         </section>
+
     </main>
 
+
+
     <footer class="site-footer">
+
         <div class="container">
+
             <div class="footer-grid">
+
                 <div class="footer-brand">
+
                     <p class="footer-logo">Aurelia <span>Atelier</span></p>
+
                     <p class="footer-tagline">Pearl-inspired fine jewelry with softness, glow, and couture structure.</p>
+
                     <div class="footer-contact-info">
+
                         <p>742 Fifth Avenue, Suite 1200</p>
+
                         <p>New York, NY 10019</p>
+
                         <p><a href="tel:+12125551234">+1 (212) 555-1234</a></p>
+
                         <p><a href="mailto:hello@aureliaatelier.com">hello@aureliaatelier.com</a></p>
+
                     </div>
+
                 </div>
+
                 <div class="footer-column">
+
                     <h4 class="footer-column-title">Collections</h4>
+
                     <ul class="footer-links">
+
                         <li><a href="all-collections.html">All Collections</a></li>
+
                         <li><a href="bridal.html">Bridal</a></li>
+
                         <li><a href="pearl-and-gold.html">Pearl & Gold</a></li>
+
                         <li><a href="gemstone-edit.html">Gemstone Edit</a></li>
+
                         <li><a href="statement.html">Statement Pieces</a></li>
+
                     </ul>
+
                 </div>
+
                 <div class="footer-column">
+
                     <h4 class="footer-column-title">Company</h4>
+
                     <ul class="footer-links">
+
                         <li><a href="index.html#story">Our Story</a></li>
+
                         <li><a href="index.html#craftsmanship">Craftsmanship</a></li>
+
                         <li><a href="index.html#contact">Visit Us</a></li>
+
                     </ul>
+
                 </div>
+
                 <div class="footer-column footer-about">
+
                     <h4 class="footer-column-title">About This Website</h4>
+
                     <p>Luxury fine jewelry with pearl-rich softness and warm gold precision.</p>
+
                 </div>
+
             </div>
+
             <div class="footer-bottom">
-                <p class="footer-copyright">Â© 2026 Aurelia. Design by Aurelia</p>
+
+                <p class="footer-copyright">© 2026 Aurelia. Design by Aurelia</p>
+
                 <div class="footer-social"><a href="#">Instagram</a><a href="#">Pinterest</a><a href="#">Facebook</a></div>
+
             </div>
+
         </div>
+
     </footer>
 
+
+
     <script src="templatemo-maison-doree.js"></script>
+
     <script>
-        const pearlProducts = [
-            { id: 'aurel', name: 'Aurel', price: 4420, category: 'pendant', tag: 'Pendant', badge: 'Pearl', image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=900&q=80' },
-            { id: 'luna', name: 'Luna', price: 2950, category: 'ring', tag: 'Ring', badge: 'Soft glow', image: 'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=900&q=80' },
-            { id: 'atlas', name: 'Atlas', price: 2840, category: 'bracelet', tag: 'Bracelet', badge: 'Classic', image: 'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=900&q=80' },
-            { id: 'echo', name: 'Echo', price: 4560, category: 'pendant', tag: 'Pendant', badge: 'Lustre', image: 'https://images.unsplash.com/photo-1523170335258-f5ed11844a49?auto=format&fit=crop&w=900&q=80' },
-            { id: 'serin', name: 'Serin', price: 3120, category: 'ring', tag: 'Ring', badge: 'Delicate', image: 'https://images.unsplash.com/photo-1506630448388-4e683c67ddb0?auto=format&fit=crop&w=900&q=80' },
-            { id: 'maison', name: 'Maison', price: 3480, category: 'bracelet', tag: 'Bracelet', badge: 'Warm', image: 'https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=900&q=80' },
-            { id: 'amour', name: 'Amour', price: 7420, category: 'ring', tag: 'Ring', badge: 'Romantic', image: 'https://images.unsplash.com/photo-1602173574767-37ac01994b2a?auto=format&fit=crop&w=900&q=80' },
-            { id: 'solstice', name: 'Solstice', price: 3180, category: 'bracelet', tag: 'Bracelet', badge: 'Glow', image: 'https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=900&q=80' }
+
+                const pearlProducts = [
+            { id: 'echo', name: 'Echo', price: 4560, category: 'pendant', tag: 'Collier Perles', badge: 'Perles Rares', image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&w=900&q=80' },
+            { id: 'aster', name: 'Aster', price: 3780, category: 'pendant', tag: 'Pendentif', badge: 'Perle & Or', image: 'https://images.unsplash.com/photo-1611085583191-a3b181a88401?auto=format&fit=crop&w=900&q=80' },
+            { id: 'lumiere', name: 'Lumière', price: 2750, category: 'pendant', tag: 'Boucles d'Oreilles', badge: 'Éclat Nacré', image: 'https://images.unsplash.com/photo-1629224316810-9d8805b95e76?auto=format&fit=crop&w=900&q=80' },
+            { id: 'clair', name: 'Clair', price: 3820, category: 'pendant', tag: 'Pendentif Coeur', badge: 'Pureté', image: 'https://images.unsplash.com/photo-1588444837495-c6cfeb53f32d?auto=format&fit=crop&w=900&q=80' },
+            { id: 'miroir', name: 'Miroir', price: 2980, category: 'ring', tag: 'Bague Pavée', badge: 'Lustre Or', image: 'images/product-miroir.jpg' },
+            { id: 'serein', name: 'Serein', price: 3120, category: 'bracelet', tag: 'Bracelet Satin', badge: 'Or Doux', image: 'images/maison-doree-05.jpg' },
+            { id: 'luna', name: 'Luna', price: 2950, category: 'ring', tag: 'Anneau Lueur', badge: 'Lumière Perle', image: 'images/product-wedding-rings.jpg' },
+            { id: 'maison', name: 'Maison', price: 3480, category: 'bracelet', tag: 'Bracelet Tennis', badge: 'Couture', image: 'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&w=900&q=80' }
         ];
 
+
+
         const pearlGrid = document.getElementById('collectionProducts');
+
         const pearlCount = document.querySelector('.collection-hero-badge strong');
+
         if (pearlCount) pearlCount.textContent = `${pearlProducts.length} pieces`;
 
+
+
         if (pearlGrid) {
+
             pearlGrid.innerHTML = pearlProducts.map((product) => `
+
                 <article class="product-card" data-category="${product.category}">
+
                     <a href="product.html?product=${product.id}" class="product-card-link">
+
                         <div class="product-image"><span class="product-badge">${product.badge}</span><img src="${product.image}" alt="${product.name}"></div>
+
                         <div class="product-content">
+
                             <div class="product-meta"><h3 class="product-name">${product.name}</h3><span class="product-price">$${product.price.toLocaleString('en-US')}</span></div>
+
                             <p class="product-description">A couture blend of pearl luminosity and sculptural gold for soft, memorable presence.</p>
+
                             <div class="product-specs"><span>Pearl</span><span>Gold</span><span>Soft</span></div>
+
                             <div class="product-actions"><span class="product-tag">${product.tag}</span><span class="btn-secondary">View</span></div>
+
                         </div>
+
                     </a>
+
                 </article>
+
             `).join('');
+
         }
+
     </script>
+
 </body>
+
 </html>
+
+
 

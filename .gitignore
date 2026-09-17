@@ -1,0 +1,5 @@
+# Logs and temp files
+server.log
+audit_images/
+__pycache__/
+*.pyc
